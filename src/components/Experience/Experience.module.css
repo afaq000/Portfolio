@@ -46,17 +46,7 @@
 }
 
 /* Apply a rotation animation to the profile picture on hover */
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
-}
 
-/* Rotate the profile picture 360 degrees on hover */
-.profile-pic:hover {
-  transform: rotate(360deg);
-}
 /* Add transition for smooth effect */
 .skillImageContainer {
   background-color: var(--color-secondary);
@@ -111,6 +101,7 @@
   justify-content: center;
   width: 120px;
   height: 120px;
+  
 }
 
 .skillImageContainer img {
@@ -138,7 +129,9 @@
   background: #19376d;
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
-  padding: 24px;
+  padding: 24px;box-shadow: -4px 2px 34px 1px rgba(0,0,0,1);
+  -webkit-box-shadow: -4px 2px 34px 1px rgba(0,0,0,1);
+  -moz-box-shadow: -4px 2px 34px 1px rgba(0,0,0,1);
 }
 
 .historyItem img {
