@@ -1,0 +1,187 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+/* Add hover effect to images in the skills section */
+.skillImageContainer img {
+  width: 75px;
+  transition: transform 0.3s ease;
+}
+
+/* Apply a scale effect on hover */
+.skillImageContainer:hover img {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+/* Add hover effect to the skill cards */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  transition: transform 0.3s ease;
+}
+
+/* Apply a translateY effect on hover */
+.skill:hover {
+  transform: translateY(-5px); /* Move the skill card upward on hover */
+}
+
+/* Apply a rotation animation to the profile picture on hover */
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the profile picture 360 degrees on hover */
+.profile-pic:hover {
+  transform: rotate(360deg);
+}
+/* Add transition for smooth effect */
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+/* Apply continuous rotation animation */
+.skillImageContainer img {
+  width: 75px;
+  animation: rotate360 5s linear infinite; /* Rotate 360 degrees in 5 seconds, repeat infinitely */
+}
+
+/* Define the continuous rotation animation */
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+/* Move the images using the transform property */
+.skillImageContainer:hover {
+  transform: translate(0, -10px); /* Move the image 10px upward on hover */
+}
+
+.skills {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.skillImageContainer img {
+  width: 75px;
+}
+
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.history {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.historyItem img {
+  width: 50px;
+}
+
+.historyItemDetails {
+  font-family: var(--font-roboto);
+}
+
+.historyItemDetails h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.historyItemDetails p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.historyItemDetails ul {
+  margin-top: 6px;
+  list-style-position: inside;
+  font-size: 25px;
+  list-style-type: disc;
+  margin-left: 17px;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+}

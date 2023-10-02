@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Project A",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Css","React", "Express", "Node", "mongoDB"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/afaq000/project-E-commerce"
+  },
+  {
+    "title": "Project B",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Css","React", "Express", "Node", "mongoDB"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/afaq000/bloging-websit"
+  },
+  {
+    "title": "Project C",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Css","React", "Express", "Node", "mongoDB"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]

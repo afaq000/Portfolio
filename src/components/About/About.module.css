@@ -1,0 +1,226 @@
+/* Import the variable CSS */
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(158, 156, 156, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 35%;
+  animation: zoomIn 1s ease-in-out 0.5s forwards; /* Apply zoomIn animation */
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s; /* Apply background-size transition */
+  animation: slideUp 1s ease-in-out 1s forwards; /* Apply slideUp animation */
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aboutItem p {
+  font-size: 25px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Define animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Add hover effect to the about items */
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s, transform 0.3s; /* Apply transitions */
+  animation: slideUp 1s ease-in-out 1s forwards; /* Apply slideUp animation */
+}
+
+/* Scale up the about item on hover */
+.aboutItem:hover {
+  background-size: 100% 100%;
+  transform: scale(1.05); /* Increase the scale on hover */
+}
+
+/* Rest of your existing CSS */
+/* ... */
+/* Add more animations to the about items */
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s, transform 0.3s, box-shadow 0.3s; /* Apply transitions */
+  animation: slideUp 1s ease-in-out 1s forwards, fadeIn 1s ease-in-out 1s forwards; /* Apply animations */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Scale up and add box shadow on hover */
+.aboutItem:hover {
+  background-size: 100% 100%;
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+/* Rest of your existing CSS */
+/* ... */
+/* Define an entrance animation */
+@keyframes entranceAnimation {
+  0% {
+    transform: translateY(50px); /* Start offscreen, move 50px downward */
+    opacity: 0; /* Start completely transparent */
+  }
+  100% {
+    transform: translateY(0); /* End at the original position */
+    opacity: 1; /* Fade in completely */
+  }
+}
+
+/* Apply the entrance animation to each item */
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s, transform 0.3s, box-shadow 0.3s; /* Apply transitions */
+  animation: slideUp 1s ease-in-out 1s forwards, fadeIn 1s ease-in-out 1s forwards, entranceAnimation 1s ease-in-out forwards; /* Apply animations */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Scale up and add box shadow on hover */
+.aboutItem:hover {
+  background-size: 100% 100%;
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+
+@keyframes continuousMove {
+  0% {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  10% {
+    transform: translateX(10%); /* Move to the right by 100% of the container's width */
+  }
+}
+
+/* Apply the continuous animation */
+.aboutItem {
+  animation: continuousMove 5s linear infinite; /* Use 'infinite' to repeat the animation infinitely */
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "role": "BS Computer",
+    "University": "Abdul Wali Khan",
+    "startDate": "Sept, 2019",
+    "endDate": "Sept,2023",
+    "experiences": ["Computer science is a field that explores the world of computing and technology. It's a journey filled with problem-solving, logic, and creativity"],
+    "imageSrc": "history/university.png"
+  },
+  {
+    "role": "Education",
+    "University": "Quaid-e-Azam",
+    "startDate": "Aug, 2017",
+    "endDate": "jun, 2019",
+    "experiences": ["College education is a transformative experience, where knowledge blooms, horizons expand, and lifelong connections are forged. It's a bridge to personal growth and professional success."],
+    "imageSrc": "history/school.png"
+  },
+  {
+    "role": "Education",
+    "University": "Quaid-e-Azam-School",
+    "startDate": "Apr, 2007",
+    "endDate": "Jun, 2017",
+    "experiences": [
+      "School education lays the foundation for lifelong learning and personal development. It's where curiosity ignites and the journey of knowledge begins."
+    ],
+    "imageSrc": "history/collage.png"
+  }
+]
